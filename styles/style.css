@@ -1,4 +1,137 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'Playfair Display';
+    src: url('./../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Bitter';
+    src: url('./../fonts/Bitter/static/Bitter-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Bitter';
+    src: url('./../fonts/Bitter/static/Bitter-Bold.ttf');
+    font-weight: 700;
+}
 *{
     margin: 0;
     padding: 0;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+}
+.menu-link:hover{
+    text-decoration: underline;
+}
+
+.title-site{
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 120%;
+}
+.title-site_label{
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-title{
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.biography_name{
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+}
+.biography_status,
+.biography_orientation{
+    color: #0D0D0D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+}
+.biography_citation{
+    color: #0D0D0D;
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.designers_name{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.designers_orientation{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.designers_orientation>span{
+    font-weight: 700;
+}
+
+.testimonials_site-title,
+.testimonials_site-link{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+}
+.testimonials_site-title{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.testimonials_site-link{
+    font-weight: 400;
+}
+.testimonials_citation{
+    color: #000;
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.strong-points_title{
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.strong-points_list li{
+    color: #000;
+    font-family: Bitter;
+    font-size: 34px;
+    font-weight: 400;
 }
