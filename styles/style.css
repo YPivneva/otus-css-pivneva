@@ -63,6 +63,7 @@
     height: 630px;
     flex-shrink: 0;
     background: no-repeat center/100% url("./../img/bacground_studio.png");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
