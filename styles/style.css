@@ -1,3 +1,8 @@
+:root{
+    --color-black: #000;
+    --color-lighter: #0D0D0D;
+    --color-wight: #fff;
+}
 @font-face{
     font-family: 'Roboto';
     src: url('./../fonts/Roboto/Roboto-Regular.ttf');
@@ -32,7 +37,11 @@
     margin: 0;
     padding: 0;
 }
-
+/* общие стили */
+.family_roboto{font-family: Roboto;}
+.family_playfair-display{font-family: Playfair Display;}
+.family_bitter{font-family: Bitter;}
+/* END общие стили*/
 .header_menu{
     min-height: 135px;
     display: flex;
@@ -50,8 +59,7 @@
 }
 .menu-link{
     text-decoration: none;
-    color: #000;
-    font-family: Roboto;
+    color: var(--color-black);
     font-size: 24px;
     font-weight: 500;
 }
@@ -77,59 +85,51 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
-    background-color: #fff;
+    background-color: var(--color-wight);
 }
 .title-site{
-    color: #000;
-    font-family: Playfair Display;
+    color: var(--color-black);
     font-size: 86px;
     font-weight: 500;
     line-height: 120%;
 }
 .title-site_label{
-    color: #000;
-    font-family: Roboto;
+    color: var(--color-black);
     font-size: 20px;
     font-weight: 500;
 }
 
 .section-title{
-    color: #000;
-    font-family: Roboto;
+    color: var(--color-black);
     font-size: 24px;
     font-weight: 700;
 }
 
 .biography_name{
-    color: #000;
-    font-family: Playfair Display;
+    color: var(--color-black);
     font-size: 86px;
     font-weight: 500;
 }
 .biography_status,
 .biography_orientation{
-    color: #0D0D0D;
-    font-family: Roboto;
+    color: var(--color-lighter);
     font-size: 18px;
     font-weight: 500;
 }
 .biography_citation{
-    color: #0D0D0D;
-    font-family: Bitter;
+    color: var(--color-lighter);
     font-size: 26px;
     font-weight: 400;
 }
 
 .designers_name{
-    color: #000;
-    font-family: Roboto;
+    color: var(--color-black);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .designers_orientation{
-    color: #000;
-    font-family: Roboto;
+    color: var(--color-black);
     font-size: 16px;
     font-weight: 400;
 }
@@ -137,36 +137,31 @@
     font-weight: 700;
 }
 
-.testimonials_site-title,
-.testimonials_site-link{
-    color: #000;
-    font-family: Roboto;
-    font-size: 16px;
-}
 .testimonials_site-title{
+    color: var(--color-black);
+    font-size: 16px;
     font-weight: 700;
     text-transform: capitalize;
 }
 .testimonials_site-link{
+    color: var(--color-black);
+    font-size: 16px;
     font-weight: 400;
 }
 .testimonials_citation{
-    color: #000;
-    font-family: Bitter;
+    color: var(--color-black);
     font-size: 32px;
     font-weight: 400;
 }
 
 .strong-points_title{
-    color: #000;
-    font-family: Playfair Display;
+    color: var(--color-black);
     font-size: 86px;
     font-weight: 500;
     line-height: 100%;
 }
 .strong-points_list li{
-    color: #000;
-    font-family: Bitter;
+    color: var(--color-black);
     font-size: 34px;
     font-weight: 400;
 }
