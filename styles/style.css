@@ -41,6 +41,19 @@
 .family_roboto{font-family: Roboto;}
 .family_playfair-display{font-family: Playfair Display;}
 .family_bitter{font-family: Bitter;}
+.d-flex{display: flex;}
+.one-column{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 36px;
+}
+.two-column{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.two-column_height-100{height: 100%;}
 /* END общие стили*/
 .header_menu{
     min-height: 135px;
@@ -99,27 +112,51 @@
     font-weight: 500;
 }
 
+.section-title_padding{padding: 40px 58px;}
 .section-title{
     color: var(--color-black);
     font-size: 24px;
     font-weight: 700;
 }
 
+.biography{
+    margin: 0 137px 150px;
+}
 .biography_name{
     color: var(--color-black);
     font-size: 86px;
     font-weight: 500;
 }
+.biography_name_first{order: -1;}
 .biography_status,
 .biography_orientation{
     color: var(--color-lighter);
     font-size: 18px;
     font-weight: 500;
 }
+.biography_orientation{list-style-type: none;}
+.biography_orientation li{
+    display: inline-block;
+}
+.stripe{
+    width: 20px;
+    height: 6px;
+    background-color: var(--color-lighter);
+}
 .biography_citation{
     color: var(--color-lighter);
     font-size: 26px;
     font-weight: 400;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+.biography_vertical-text{
+    width: 115px;
+    height: 23px;
+    transform: rotate(-90deg);
 }
 
 .designers_name{
