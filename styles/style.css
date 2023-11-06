@@ -48,10 +48,12 @@
     justify-content: center;
     gap: 36px;
 }
-.two-column{
+.first-column{width: 40%;}
+.second-column{width: 50%;}
+.two-column{    
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .two-column_height-100{height: 100%;}
 /* END общие стили*/
@@ -119,9 +121,8 @@
     font-weight: 700;
 }
 
-.biography{
-    margin: 0 137px 150px;
-}
+.biography{margin-bottom: 150px;}
+.biography-img{width: 100%;}
 .biography_name{
     color: var(--color-black);
     font-size: 86px;
@@ -147,7 +148,7 @@
     color: var(--color-lighter);
     font-size: 26px;
     font-weight: 400;
-    padding-right: 70px;
+    padding-right: 15%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
