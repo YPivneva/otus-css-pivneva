@@ -41,6 +41,12 @@
 .family_roboto{font-family: Roboto;}
 .family_playfair-display{font-family: Playfair Display;}
 .family_bitter{font-family: Bitter;}
+.d-grid{display: grid;}
+.grid_three-column{
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr;;
+    justify-content: center;
+}
 /* END общие стили*/
 .header_menu{
     min-height: 135px;
@@ -152,6 +158,11 @@
     color: var(--color-black);
     font-size: 32px;
     font-weight: 400;
+    justify-self: center;
+}
+.testimonials_title{justify-self: end;}
+.testimonials_site{
+    justify-self: end;
 }
 
 .strong-points_title{
