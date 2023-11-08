@@ -171,8 +171,7 @@
 .testimonials_citation blockquote{width: 221px;}
 .testimonials_title{
     justify-self: start;
-    order: 1;   
-    transform: rotate(-90deg);
+    order: 1;
     height: 5%; 
 }
 .testimonials_site{
@@ -187,6 +186,12 @@
     height: 49px;
 }
 .testimonials_img{width: 100%;}
+.testimonials_title-vertical{
+    width: 140px;
+    height: 30px;
+    transform: rotate(-90deg);
+    padding: 55px 0px;
+}
 
 .strong-points_title{
     color: var(--color-black);
