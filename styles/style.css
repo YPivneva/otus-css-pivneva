@@ -46,6 +46,8 @@
     grid-template-columns: 1fr 2fr 1fr 2fr;
     grid-template-rows: 1fr;;
     justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 150px;
 }
 /* END общие стили*/
 .header_menu{
@@ -159,11 +161,32 @@
     font-size: 32px;
     font-weight: 400;
     justify-self: center;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
 }
-.testimonials_title{justify-self: end;}
+.testimonials_citation blockquote{width: 221px;}
+.testimonials_title{
+    justify-self: start;
+    order: 1;   
+    transform: rotate(-90deg);
+    height: 5%; 
+}
 .testimonials_site{
     justify-self: end;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+.testimonials_site__element{
+    transform: rotate(-90deg);
+    align-self: center;
+    width: 195px;
+    height: 49px;
+}
+.testimonials_img{width: 100%;}
 
 .strong-points_title{
     color: var(--color-black);
