@@ -41,6 +41,7 @@
 .family_roboto{font-family: Roboto;}
 .family_playfair-display{font-family: Playfair Display;}
 .family_bitter{font-family: Bitter;}
+.d-flex{display: flex;}
 .d-grid{display: grid;}
 /* END общие стили*/
 .header_menu{
@@ -144,16 +145,16 @@
     font-weight: 700;
 }
 .designers_content{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
+    width: 1420px;
+    gap: 20px;
     align-items: end;
-    margin-left: 20px;
+    margin: 0px auto;
+    overflow-x: auto;
 }
 .designers_content img{margin-bottom: 24px;}
 .designers_float-fight{
     width: 335px;
-    float: right;
+    justify-self: end;
 }
 
 .testimonials_site-title{
