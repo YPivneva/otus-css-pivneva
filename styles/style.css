@@ -43,7 +43,7 @@
 .family_bitter{font-family: Bitter;}
 .d-grid{display: grid;}
 .grid_three-column{
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;;
     justify-content: center;
     padding: 0 20px;
@@ -168,24 +168,22 @@
     align-items: center;
     gap: 42px;
 }
-.testimonials_citation blockquote{width: 221px;}
 .testimonials_title{
     justify-self: start;
     order: 1;
-    height: 5%; 
 }
 .testimonials_site{
     justify-self: end;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 70px;
+    padding: 20px 0px;
 }
 .testimonials_site__element{
     transform: rotate(-90deg);
     align-self: center;
-    width: 195px;
-    height: 49px;
 }
-.testimonials_img{width: 100%;}
+.testimonials_img{height: 100%;}
 .testimonials_title-vertical{
     width: 140px;
     height: 30px;
