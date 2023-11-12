@@ -42,6 +42,7 @@
 .family_playfair-display{font-family: Playfair Display;}
 .family_bitter{font-family: Bitter;}
 .d-flex{display: flex;}
+.d-grid{display: grid;}
 .one-column{
     flex-direction: column;
     flex-wrap: nowrap;
@@ -192,14 +193,46 @@
     font-weight: 400;
 }
 
+.strong-points{
+    margin-bottom: 140px;
+}
 .strong-points_title{
+    margin-bottom: 30px;
+    margin-left: 258px;
+}
+.strong-points_list-title{
     color: var(--color-black);
     font-size: 86px;
     font-weight: 500;
     line-height: 100%;
+    text-align: center;
+}
+.strong-points_list{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 18px;
 }
 .strong-points_list li{
     color: var(--color-black);
     font-size: 34px;
     font-weight: 400;
+}
+.strong-points_content{
+    /* grid-template-columns: repeat(auto-fill, 350px[col-start] 350px [col-middle] 450px[col-end]);
+    grid-auto-flow: column; */
+    display: grid;
+    grid-template-columns: 350px 350px 450px 350px;
+    grid-template-rows: 1fr;    
+    margin: 0 20px;
+    gap: 20px;
+    overflow-x: auto;
+}
+@supports (display: flex) {
+    .strong-points_content{
+        display: flex;
+        margin: 0 20px;
+        gap: 20px;
+        overflow-x: auto;
+    }
 }
