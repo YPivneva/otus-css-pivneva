@@ -221,15 +221,32 @@
 .strong-points_content{
     /* grid-template-columns: repeat(auto-fill, 350px[col-start] 350px [col-middle] 450px[col-end]);
     grid-auto-flow: column; */
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 350px 20px 350px 20px 450px 20px 350px;
     grid-template-columns: 350px 350px 450px 350px;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;    
     margin: 0 20px;
     gap: 20px;
     overflow-x: auto;
+}.strong-points_content > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}.strong-points_content > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}.strong-points_content > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}.strong-points_content > *:nth-child(4){
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
 }
 @supports (display: flex) {
     .strong-points_content{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 20px;
         gap: 20px;
