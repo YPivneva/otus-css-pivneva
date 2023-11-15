@@ -43,12 +43,10 @@
 .family_bitter{font-family: Bitter;}
 .d-grid{display: grid;}
 .grid_three-column{
-    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-template-columns: 2fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 1fr;;
     justify-content: center;
-    margin: 0 20px;
-    padding: 0 119px;
-    margin-bottom: 150px;
+    margin: 0 20px 150px;
 }
 /* END общие стили*/
 .header_menu{
@@ -171,27 +169,31 @@
 }
 .testimonials_citation blockquote{width: 221px;}
 .testimonials_title{
-    justify-self: start;
     order: 1;
-    height: 5%; 
+    position: relative;
+    width: 100px;
+    padding: 20px 0px;
 }
 .testimonials_site{
     justify-self: end;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    /*display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;*/
 }
 .testimonials_site__element{
     transform: rotate(-90deg);
     align-self: center;
-    width: 195px;
-    height: 49px;
+    /* width: 195px;
+    height: 49px; */
 }
+.testimonials-img_center{justify-items: center;}
 .testimonials_img{height: 100%;}
 .testimonials_title-vertical{
-    width: 140px;
-    height: 30px;
+    height: 100px;
+    position: absolute;
     transform: rotate(-90deg);
-    padding: 55px 0px;
 }
 
 .strong-points_title{
