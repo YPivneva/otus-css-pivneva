@@ -124,7 +124,7 @@
     font-weight: 400;
 }
 
-.designers{margin-bottom: 150px;}
+.designers{margin: 0px 20px 150px 20px;}
 .designers_name{
     color: var(--color-black);
     font-size: 16px;
@@ -147,13 +147,16 @@
 .designers_content{
     gap: 20px;
     align-items: end;
-    margin: 0px 20px;
+    margin: 0px auto;
     overflow-x: auto;
+    justify-content: start;
+    padding-bottom: 20px;
 }
 .designers_content img{
     margin-bottom: 21px;
-    width: 100%;
 }
+.designers_small-img{width: 330px;}
+.designers_big-img{width: 572px;}
 .designers_float-fight{
     margin-top: 3px;
     width: 335px;
