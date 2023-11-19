@@ -185,13 +185,10 @@
 .testimonials_site__element{
     transform: rotate(-90deg);
     align-self: center;
-    /* width: 195px;
-    height: 49px; */
+    width: 195px;
+    height: 49px;
 }
-.testimonials-img_center{
-    width: 100%;
-    object-fit: contain;    
-}
+.testimonials-img_center{justify-items: center;}
 .testimonials_img{height: 100%;}
 .testimonials_title-vertical{
     height: 100px;
