@@ -188,7 +188,10 @@
     width: 195px;
     height: 49px;
 }
-.testimonials-img_center{justify-items: center;}
+.testimonials-img_center{
+    width: 100%;
+    object-fit: contain;
+}
 .testimonials_img{height: 100%;}
 .testimonials_title-vertical{
     height: 100px;
