@@ -356,7 +356,15 @@
     }
     .title-site_label{font-size: 18px;}
     
-    .section-title_padding{padding: 0px;}
+    .section-title {
+        font-size: 18px;
+    }
+    .section-title_padding{
+        padding: 0px;
+        position: absolute;
+        margin-top: -110%;
+        margin-left: 70%;
+    }
     .two-column{flex-direction: column;}
     .first-column {
         width: 100%;
