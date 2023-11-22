@@ -207,6 +207,7 @@
     align-items: end;
     margin: 0px auto;
     overflow-x: auto;
+    scroll-behavior: smooth;
     justify-content: start;
     padding-bottom: 20px;
 }
@@ -309,6 +310,7 @@
     margin: 0 20px;
     gap: 20px;
     overflow-x: auto;
+    scroll-behavior: smooth;
     justify-content: center;
 }
 .strong-points_content > *:nth-child(1){
@@ -335,16 +337,37 @@
         margin: 0 20px;
         gap: 20px;
         overflow-x: auto;
+        scroll-behavior: smooth;
         justify-content: center;
     }
 }
 
 @media (max-width: 420px){
+    body{
+        position: relative;
+        height: 100%;
+        padding-bottom: 82px;
+    }
+    .header_menu {
+        min-height: 82px;
+        width: 90%;
+        position: absolute;
+        bottom: 0px;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .menu-link span{display: none;}
+    .menu-link{
+        font-size: 40px;
+        font-family: Bitter;
+        font-weight: 400;
+    }
     .header_screensaver{
         height: 764px;
         background: no-repeat center/100% url("./../img/bacground_studio_mobile.png");
         align-items: start;
-    }
+    }    
     .screensaver_text{
         width: 100%;
         height: 344px;
@@ -469,7 +492,10 @@
     }
     .testimonials-citation_img img{width: 100%;}
 
-    .strong-points_content{justify-content: start;}
+    .strong-points_content{
+        height: 450px;
+        justify-content: start;
+    }
     .strong-points_title {
         margin-left: 0px;
         padding: 0 18px;
@@ -487,4 +513,9 @@
         padding: 0 16px;
       }
     .strong-points_list li {font-size: 24px;}
+    .strong-points_container-img{
+        aspect-ratio: auto;
+        width: 100%;
+    }
+    .strong-points_container-img img{height: 100%;}
 }
