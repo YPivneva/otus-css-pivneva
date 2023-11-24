@@ -85,9 +85,17 @@
     color: var(--color-black);
     font-size: 24px;
     font-weight: 500;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 .menu-link:hover{
     text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.menu-link:focus{
+    color: #5A3232;
 }
 
 .header_screensaver{
@@ -99,6 +107,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
+    -webkit-animation: kenburns-top-right 7s ease-in-out both;
+        animation: kenburns-top-right 7s ease-in-out both;
 }
 .screensaver_text{
     display: flex;
@@ -322,3 +332,45 @@
         overflow-x: auto;
     }
 }
+
+@-webkit-keyframes kenburns-top-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 84% 16%;
+              transform-origin: 84% 16%;
+    }
+    50% {
+        -webkit-transform: scale(0.8) translate(20px, -15px);
+                transform: scale(0.8) translate(20px, -15px);
+        -webkit-transform-origin: right top;
+                transform-origin: right top;
+      }
+    100% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: right top;
+              transform-origin: right top;
+    }
+  }
+  @keyframes kenburns-top-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 84% 16%;
+              transform-origin: 84% 16%;
+    }
+    50% {
+      -webkit-transform: scale(0.8) translate(20px, -15px);
+              transform: scale(0.8) translate(20px, -15px);
+      -webkit-transform-origin: right top;
+              transform-origin: right top;
+    }
+    100% {
+        -webkit-transform: scale(1) translate(0, 0);
+                transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: right top;
+                transform-origin: right top;
+    }
+}
+  
