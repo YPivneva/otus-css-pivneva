@@ -8,48 +8,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Fira+Sans:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <samp src="./js/tailwind.config.js"</samp>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div>
         <main>
-            <header class="header_menu">
-                <ul class="menu">
-                    <li><a class="menu-link family_roboto" href="#Biography">B<span>iography</span></a></li>
-                    <li><a class="menu-link family_roboto" href="#Designers">D<span>esigners</span></a></li>
-                    <li><a class="menu-link family_roboto" href="#Testimonials">T<span>estimonials</span></a></li>
-                    <li><a class="menu-link family_roboto" href="#StrongPoints">S<span>trong points</span></a></li>
+            <header class="h-32 flex justify-end items-center mx-5">
+                <ul class="list-none flex justify-end items-center gap-14 grow shrink-0 basis-0">
+                    <li><a class="no-underline font-sans decoration-black text-2xl font-semibold inline-block transition-transform transition-colors hover:underline hover:cursor-pointer hover:scale-125 focus:text-rose-950" href="#Biography">B<span>iography</span></a></li>
+                    <li><a class="no-underline font-sans decoration-black text-2xl font-semibold inline-block transition-transform transition-colors hover:underline hover:cursor-pointer hover:scale-125 focus:text-rose-950" href="#Designers">D<span>esigners</span></a></li>
+                    <li><a class="no-underline font-sans decoration-black text-2xl font-semibold inline-block transition-transform transition-colors hover:underline hover:cursor-pointer hover:scale-125 focus:text-rose-950" href="#Testimonials">T<span>estimonials</span></a></li>
+                    <li><a class="no-underline font-sans decoration-black text-2xl font-semibold inline-block transition-transform transition-colors hover:underline hover:cursor-pointer hover:scale-125 focus:text-rose-950" href="#StrongPoints">S<span>trong points</span></a></li>
                 </ul>
             </header>
-            <div class="header_screensaver">
-                <div class="screensaver_text">
-                    <h1 class="title-site family_playfair-display">Mod Studio</h1>
-                    <p class="title-site_label family_roboto">Modern Web Studio</p>
+            <div class="bg-no-repeat bg-center bg-cover flex shrink-0 justify-center items-center mb-40 animate-[kenburns-top-right_7s_ease-in-out_both]" style="height: 630px; background-image: url('/img/bacground_studio.png');">
+                <div class="w-1/2 flex flex-col justify-center items-center gap-3.5 px-5 py-36 bg-white">
+                    <h1 class="text-black text-[86px] font-medium leading-[120%]">Mod Studio</h1>
+                    <p class="font-sans font-semibold text-xl text-black">Modern Web Studio</p>
                 </div>
             </div>
         </main>
-        <section id="Biography" class="biography d-flex two-column">            
-            <div class="first-column column-biography-img">
-                <img class="biography-img" src="./img/katya_mills.jpg" alt="Katya Mills">
+        <section id="Biography" class="mb-40 flex flex-row flex-wrap justify-center">            
+            <div class="w-2/5 max-[620px]:h-96 max-[620px]overflow-hidden max-[620px]flex max-[620px]flex-shrink max-[620px]items-center max-[620px]justify-center">
+                <img class="w-full" src="./img/katya_mills.jpg" alt="Katya Mills">
             </div>
-            <div class="d-flex two-column second-column">
-                <div class="d-flex section-title_padding">
-                    <h2 class="section-title family_roboto biography_vertical-text">Biography</h2>  
+            <div class="w-2/5 flex flex-row flex-nowrap justify-center">
+                <div class="flex py-10">
+                    <h2 class="text-black text-2xl font-bold font-sans w-28 h-6 origin-center rotate-90">Biography</h2>  
                 </div> 
-                <div class="d-flex two-column_height-100 one-column">                     
-                    <div class="biography-status_container">
-                        <p class="biography_status family_roboto">Art Director</p>
-                        <ul class="biography_orientation family_roboto">
-                            <li>Scenography <span>&#8260;</span></li>
-                            <li>Styling <span>&#8260;</span></li>
-                            <li>Creative Photography <span>&#8260;</span></li>
-                            <li>Design</li>
+                <div class="flex h-full flex-col flex-nowrap justify-center gap-9">                     
+                    <div class="w-11/12">
+                        <p class="text-black text-lg font-semibold font-sans">Art Director</p>
+                        <ul class="text-black text-lg font-semibold list-none font-sans">
+                            <li class="inline-block">Scenography <span>&#8260;</span></li>
+                            <li class="inline-block">Styling <span>&#8260;</span></li>
+                            <li class="inline-block">Creative Photography <span>&#8260;</span></li>
+                            <li class="inline-block">Design</li>
                         </ul>
                     </div> 
-                    <div class="biography_name_first">
-                        <p class="biography_name family_playfair-display"><span>- </span>Katya Mills</p>
+                    <div class="order-[-1]">
+                        <p class="text-black text-[76px] font-semibold family_playfair-display"><span class="hidden">- </span>Katya Mills</p>
                     </div>
-                    <div class="stripe"></div>
-                    <div class="biography_citation family_bitter">                        
+                    <div class="w-5 h-1.5 bg-black"></div>
+                    <div class="text-slate-700 text-2xl font-normal pr-16 flex flex-col items-start gap-5 order-1 family_bitter">                        
                         <blockquote>
                             “The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”
                         </blockquote>
@@ -57,34 +60,34 @@
                 </div>
             </div>
         </section>
-        <section id="Designers" class="designers">
-            <h2 class="section-title family_roboto designers_title">Designers</h2>
-            <div class="d-flex designers_content">
-                <div class="d-grid">
-                    <img class="designers_big-img" src="./img/jess_wonder.jpg" alt="Jess Wonder">
-                    <div class="designers_float-fight">
-                        <p class="designers_name family_roboto">Jess Wonder</p>
-                        <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                        <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+        <section id="Designers" class="mx-5 mb-40">
+            <h2 class="text-black text-2xl font-extrabold font-sans w-80 ml-36 mb-7">Designers</h2>
+            <div class="flex gap-5 items-end mx-auto overflow-x-auto scroll-smooth justify-start pb-5">
+                <div class="grid">
+                    <img class="mb-5 max-[620px]:h-[440px]" src="./img/jess_wonder.jpg" alt="Jess Wonder">
+                    <div class="mb-1 w-7/12 justify-self-end">
+                        <p class="text-black font-bold font-extrabold uppercase font-sans">Jess Wonder</p>
+                        <p class="text-black text-base font-normal font-sans"><span class="font-bold">From &#8260;</span> Be more flower</p>
+                        <p class="text-black text-base font-normal font-sans"><span class="font-bold">Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
                     </div>
                 </div>
                 <div>
-                    <img src="./img/kameron_clein.jpg" alt="Kameron Clein">
-                    <p class="designers_name family_roboto">Kameron Clein</p>
-                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                    <img class="mb-5" src="./img/kameron_clein.jpg" alt="Kameron Clein">
+                    <p class="text-black font-bold font-extrabold uppercase font-sans">Kameron Clein</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">From &#8260;</span> Be more flower</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
                 </div>
                 <div>
-                    <img src="./img/louisse_red.jpg" alt="Louisse Red">
-                    <p class="designers_name family_roboto">Louisse Red</p>
-                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                    <img class="mb-5" src="./img/louisse_red.jpg" alt="Louisse Red">
+                    <p class="text-black font-bold font-extrabold uppercase font-sans">Louisse Red</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">From &#8260;</span> Be more flower</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
                 </div>
                 <div>
-                    <img src="./img/kameron_clein.jpg" alt="Kameron Clein">
-                    <p class="designers_name family_roboto">Kameron Clein</p>
-                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                    <img class="mb-5" src="./img/kameron_clein.jpg" alt="Kameron Clein">
+                    <p class="text-black font-bold font-extrabold uppercase font-sans">Kameron Clein</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">From &#8260;</span> Be more flower</p>
+                    <p class="text-black text-base font-normal font-sans"><span class="font-bold">Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
                 </div>
             </div>
         </section>
