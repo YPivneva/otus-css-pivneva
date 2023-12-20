@@ -9,8 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Fira+Sans:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <samp src="./js/tailwind.config.js"</samp>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontSize: {
+                    bigest: '86px',
+                },
+                lineHeight: {
+                    bigestLine: '120%',
+                }
+            },
+          },
+        };
+    </script>
 </head>
 <body>
     <div>
@@ -25,7 +38,7 @@
             </header>
             <div class="bg-no-repeat bg-center bg-cover flex shrink-0 justify-center items-center mb-40 animate-[kenburns-top-right_7s_ease-in-out_both]" style="height: 630px; background-image: url('/img/bacground_studio.png');">
                 <div class="w-1/2 flex flex-col justify-center items-center gap-3.5 px-5 py-36 bg-white">
-                    <h1 class="text-black text-[86px] font-medium leading-[120%]">Mod Studio</h1>
+                    <h1 class="text-black bigest font-medium leading-[120%]">Mod Studio</h1>
                     <p class="font-sans font-semibold text-xl text-black">Modern Web Studio</p>
                 </div>
             </div>
