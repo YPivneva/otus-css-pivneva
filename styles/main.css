@@ -1,6 +1,0 @@
-@tailwind base;
-@layer base {
-    h1 {
-        font-family: "Playfair Display", system-ui, sans-serif;
-    }
-  }
