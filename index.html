@@ -14,10 +14,10 @@
         <main>
             <header class="header_menu">
                 <ul class="menu">
-                    <li><a class="menu-link family_roboto" href="#Biography">Biography</a></li>
-                    <li><a class="menu-link family_roboto" href="#Designers">Designers</a></li>
-                    <li><a class="menu-link family_roboto" href="#Testimonials">Testimonials</a></li>
-                    <li><a class="menu-link family_roboto" href="#StrongPoints">Strong points</a></li>
+                    <li><a class="menu-link family_roboto" href="#Biography">B<span>iography</span></a></li>
+                    <li><a class="menu-link family_roboto" href="#Designers">D<span>esigners</span></a></li>
+                    <li><a class="menu-link family_roboto" href="#Testimonials">T<span>estimonials</span></a></li>
+                    <li><a class="menu-link family_roboto" href="#StrongPoints">S<span>trong points</span></a></li>
                 </ul>
             </header>
             <div class="header_screensaver">
@@ -27,56 +27,65 @@
                 </div>
             </div>
         </main>
-        <section id="Biography">
-            <h2 class="section-title family_roboto">Biography</h2>
-            <div>
-                <img src="./img/katya_mills.jpg" alt="Katya Mills">
+        <section id="Biography" class="biography d-flex two-column">            
+            <div class="first-column column-biography-img">
+                <img class="biography-img" src="./img/katya_mills.jpg" alt="Katya Mills">
             </div>
-            <div>        
-                <div>
-                    <p class="biography_status family_roboto">Art Director</p>
-                    <ul class="biography_orientation family_roboto">
-                        <li>Scenography <span>&#8260;</span></li>
-                        <li>Styling <span>&#8260;</span></li>
-                        <li>Creative Photography <span>&#8260;</span></li>
-                        <li>Design</li>
-                    </ul>
+            <div class="d-flex two-column second-column">
+                <div class="d-flex section-title_padding">
+                    <h2 class="section-title family_roboto biography_vertical-text">Biography</h2>  
                 </div> 
-                <div>
-                    <p class="biography_name family_playfair-display"><span>&#8722; </span>Katya Mills</p>
-                </div>
-                <div class="biography_citation family_bitter">
-                    <blockquote>
-                        &#10077;The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.&#10078;
-                    </blockquote>
+                <div class="d-flex two-column_height-100 one-column">                     
+                    <div class="biography-status_container">
+                        <p class="biography_status family_roboto">Art Director</p>
+                        <ul class="biography_orientation family_roboto">
+                            <li>Scenography <span>&#8260;</span></li>
+                            <li>Styling <span>&#8260;</span></li>
+                            <li>Creative Photography <span>&#8260;</span></li>
+                            <li>Design</li>
+                        </ul>
+                    </div> 
+                    <div class="biography_name_first">
+                        <p class="biography_name family_playfair-display"><span>- </span>Katya Mills</p>
+                    </div>
+                    <div class="stripe"></div>
+                    <div class="biography_citation family_bitter">                        
+                        <blockquote>
+                            “The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="Designers">
-            <h2 class="section-title family_roboto">Designers</h2>
-            <div>
-                <img src="./img/jess_wonder.jpg" alt="Jess Wonder">
-                <p class="designers_name family_roboto">Jess Wonder</p>
-                <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
-            </div>
-            <div>
-                <img src="./img/kameron_clein.jpg" alt="Kameron Clein">
-                <p class="designers_name family_roboto">Kameron Clein</p>
-                <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
-            </div>
-            <div>
-                <img src="./img/louisse_red.jpg" alt="Louisse Red">
-                <p class="designers_name family_roboto">Louisse Red</p>
-                <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
-            </div>
-            <div>
-                <img src="./img/kameron_clein_2.jpg" alt="Kameron Clein">
-                <p class="designers_name family_roboto">Kameron Clein</p>
-                <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
-                <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+        <section id="Designers" class="designers">
+            <h2 class="section-title family_roboto designers_title">Designers</h2>
+            <div class="d-flex designers_content">
+                <div class="d-grid">
+                    <img class="designers_big-img" src="./img/jess_wonder.jpg" alt="Jess Wonder">
+                    <div class="designers_float-fight">
+                        <p class="designers_name family_roboto">Jess Wonder</p>
+                        <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
+                        <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/kameron_clein.jpg" alt="Kameron Clein">
+                    <p class="designers_name family_roboto">Kameron Clein</p>
+                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
+                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                </div>
+                <div>
+                    <img src="./img/louisse_red.jpg" alt="Louisse Red">
+                    <p class="designers_name family_roboto">Louisse Red</p>
+                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
+                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                </div>
+                <div>
+                    <img src="./img/kameron_clein.jpg" alt="Kameron Clein">
+                    <p class="designers_name family_roboto">Kameron Clein</p>
+                    <p class="designers_orientation family_roboto"><span>From &#8260;</span> Be more flower</p>
+                    <p class="designers_orientation family_roboto"><span>Skills &#8260;</span> Design Strategy &#8260; Marketing</p>
+                </div>
             </div>
         </section>
         <section id="Testimonials" class="d-grid grid_three-column">
@@ -102,32 +111,40 @@
             </div>
             <div class="testimonials_citation family_bitter">
                 <blockquote>
-                    I just really<br/> want to do<br/> good work<br/> and work with<br/> some great<br/> people, people<br/> who challenge<br/> me.
+                    I just really want to do good work and work with some great people, people who challenge me.
                 </blockquote>
-                <img src="./img/shop.jpg" alt="shop">
+                <div class="testimonials-citation_img">
+                    <img src="./img/shop.jpg" alt="shop">
+                </div>
             </div>
         </section>
-        <section id="StrongPoints">
-            <h2 class="section-title family_roboto">Strong points</h2>
-            <div>
-                <img src="./img/points_1.jpg" alt="strong points 1">
-                <img src="./img/points_2.jpg" alt="strong points 2">
-            </div>
-            <div>
-                <p class="strong-points_title family_playfair-display">Strengths</p>
-                <ul class="strong-points_list family_bitter">
-                    <li>Interiors</li>
-                    <li>Outdoors</li>
-                    <li>Portraits</li>
-                    <li>Styling</li>
-                    <li>Events</li>
-                    <li>Architecture</li>
-                    <li>Design</li>
-                    <li>Celebrations</li>
-                    <li>Fashion</li>
-                    <li>Nature</li>
-                </ul>
-                <img src="./img/strengths.jpg" alt="strengths">
+        <section id="StrongPoints" class="strong-points">
+            <h2 class="section-title strong-points_title family_roboto">Strong points</h2>
+            <div class="strong-points_content">
+                <div class="strong-points_container-img">
+                    <img src="./img/points_1.jpg" alt="strong points 1">
+                </div>
+                <div class="strong-points_container-img">
+                    <img src="./img/points_2.jpg" alt="strong points 2">
+                </div>
+                <div>
+                    <p class="strong-points_list-title family_playfair-display">Strengths</p>
+                    <ul class="strong-points_list family_bitter">
+                        <li>Interiors</li>
+                        <li>Outdoors</li>
+                        <li>Portraits</li>
+                        <li>Styling</li>
+                        <li>Events</li>
+                        <li>Architecture</li>
+                        <li>Design</li>
+                        <li>Celebrations</li>
+                        <li>Fashion</li>
+                        <li>Nature</li>
+                    </ul>                
+                </div>
+                <div class="strong-points_container-img">
+                    <img src="./img/strengths.jpg" alt="strengths">
+                </div>
             </div>
         </section>
     </div>
