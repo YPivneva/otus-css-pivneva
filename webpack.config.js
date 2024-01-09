@@ -1,27 +1,35 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCss = require("mini-css-extract-plugin");
 
 module.exports = {
-    mode: 'development',
+    mode: 'development',    
+    target: 'web',
+    devtool: 'source-map',
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
     },
     output: {
-        patch: path.resolve(__dirname, './dist'),
-        filename: '[name].[hash:8].js',
+        path: path.resolve(__dirname, 'dev'),
         clean: true,
+        filename: "main.js",
+        assetModuleFilename: 'assets/[name][ext]',
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'),
             filename: 'index.html',
         }),
+        new MiniCss({
+            filename: "style.css",
+        })
     ],
     module: {
         rules:[
             {
                 test: /\.s[ac]ss$/i,
                 use: [
+                    MiniCss.loader,
                     "style-loader",
                     "css-loader",
                     "sass-loader",
@@ -32,14 +40,14 @@ module.exports = {
                 use: 'html-loader'
             },
             {
-                test: /\.(png|gif)$/,
+                test: /\.(png|jpg|gif)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name]-[hash][ext]',
+                    filename: 'img/[name]-[hash][ext]',
                 }
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf)$/,
+                test: /\.(woff(2)?|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name]-[hash][ext]',
@@ -50,7 +58,7 @@ module.exports = {
     devServer: {
         compress: false,
         open: true,
-        port: 3000,
+        port: 5004,
         hot: true,
     }
 }
