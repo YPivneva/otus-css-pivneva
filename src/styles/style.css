@@ -326,18 +326,26 @@
 .strong-points_content > *:nth-child(1){
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+        grid-row: 1;
+        grid-column: 1;
 }
 .strong-points_content > *:nth-child(2){
     -ms-grid-row: 1;
     -ms-grid-column: 3;
+        grid-row: 1;
+        grid-column: 3;
 }
 .strong-points_content > *:nth-child(3){
     -ms-grid-row: 1;
     -ms-grid-column: 5;
+        grid-row: 1;
+        grid-column: 5;
 }
 .strong-points_content > *:nth-child(4){
     -ms-grid-row: 1;
     -ms-grid-column: 7;
+        grid-row: 1;
+        grid-column: 7;
 }
 @supports (display: flex) {
     .strong-points_content{
