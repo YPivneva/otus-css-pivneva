@@ -48,9 +48,9 @@
     padding: 0;
 }
 /* общие стили */
-.family_roboto{font-family: Roboto;font-display: optional;}
-.family_playfair-display{font-family: Playfair Display;font-display: optional;}
-.family_bitter{font-family: Bitter;font-display: optional;}
+.family_roboto{font-family: Roboto;}
+.family_playfair-display{font-family: Playfair Display;}
+.family_bitter{font-family: Bitter;}
 .d-flex{display: flex;}
 .d-grid{display: grid;}
 .one-column{
